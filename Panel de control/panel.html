@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300" rel="stylesheet" />
+
+    <link rel="stylesheet" href="panel.css">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script defer src="panel.js"></script>
+
+    <title>Simulación de un panel de visualización de datos</title>
+</head>
+<body>
+    <main>
+
+        <h1>Montañas rusas</h1>
+        <p>Visualización de estadísticas globales</p>
+
+        <hr>
+
+        <section class="flex cols-2">
+            <figure>
+                <p>Gráfico radial</p>
+                <h3>Comparativa global</h3>
+                <canvas id="chart1"></canvas>
+            </figure>
+
+            <figure>
+                <p>Gráfico de área polar</p>
+                <h3>Montañas rusas por país</h3>
+                <canvas id="chart2"></canvas>
+            </figure>
+        </section>
+
+        <section class="flex cols-1">
+            <figure>
+                <p>Gráfico lineal</p>
+                <h3>Construcciones por año</h3>
+                <canvas id="chart6"></canvas>
+            </figure>
+        </section>
+
+        <section class="flex cols-3">
+            <figure>
+                <p>Gráfico radial</p>
+                <h3>Altura</h3>
+                <canvas id="chart3"></canvas>
+            </figure>
+
+            <figure>
+                <p>Gráfico de <em>donut</em></p>
+                <h3>Modelos</h3>
+                <canvas id="chart4"></canvas>
+            </figure>
+
+            <figure>
+                <p>Gráfico de barras</p>
+                <h3>Fuerza G</h3>
+                <canvas id="chart5"></canvas>
+            </figure>
+        </section>
+
+    </main>
+</body>
+</html>
